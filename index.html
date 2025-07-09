@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/logo.png">
+    <title>Crypto-Landing-Page</title>
+    <!--=================================== Links =================================================--->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--=================================== Header Section =================================================--->
+       
+        <header>
+            <a href="#" class="logo">Crypto Market</a>
+            <nav>
+                <ul class="navbar active">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Sell</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+	            <i onclick="displayMenu()" class="fa-solid fa-bars" id="menu"></i>
+            </nav>
+            <div class="header-btn">
+                 <button type="button" onclick="displayLogin()">LogIn</button>
+                 <button type="button" onclick="displaySignup()">SignUp</button>
+            </div>
+        </header>
+
+
+
+
+    <!--============================= Login And Sign up Section ===========================================--->
+     
+      <section class="login-signup">
+        <div class="login-signup-content">
+          <div class="login">
+            <i onclick="removeLoginSignup()" class="fas fa-xmark"></i>
+            <h2>LOGIN</h2>
+            <form action="#">
+                <label for="email">Email</label><br>
+                <input type="email" placeholder="example@gmail.com" id="email" required><br>
+                <label for="password">Password</label><br>
+                <input type="password" placeholder="********" name="password" id="password" required><br>
+                <input type="checkbox" name="chkbox" id="chkbox">
+                <label for="chkbox">Remember me?</label><br>
+                <input type="submit" value="LogIn">
+            </form>
+            <a class="frgt" href="#">Forgot Password?</a>
+            <p>You don't have an account? <a href="#" onclick="displaySignup()">SIGN UP</a></p>
+          </div>
+          <div class="signup">
+            <i onclick="removeLoginSignup()" class="fas fa-xmark"></i>
+             <h2>SIGN UP</h2>
+            <form action="#" method="get">
+                <label for="email">Email</label><br>
+                <input type="email" placeholder="example@gmail.com" id="email" name="email" required><br>
+                <label for="password">Password</label><br>
+                <input type="password" placeholder="********" name="password" id="password" required><br>
+                <input type="submit" value="SIGN UP">
+            </form>
+            <p>You have an account? <a href="#" onclick="displayLogin()">LOGIN</a></p>
+          </div>
+        </div>
+      </section>
+
+
+    <!--=================================== Hero Section =================================================--->
+
+        <section class="hero">
+            <div class="hero-content">
+                    <div class="hero-bg shadow"></div>
+                    <img src="image/logo.png" alt="logo">
+                    <h1>Buy And Sell <br>
+                    <span>Crypto</span> Today </h1>
+                    <div class="hero-bg2 shadow"></div>
+                    <p>Trade with confidence and build your future with <br> fastest crypto exchange.</p>
+                </div>
+                 <div class="hero-btn">
+                    <button type="button">Get Started</button>
+                    <button type="button">View Exchange</button>
+                 </div>
+        </section>
+         
+
+
+
+
+
+
+
+
+
+
+    <!--=================================== Partners Section =================================================--->
+
+      <section class="partners">
+        <h2>Trusted Partners</h2>
+        <div class="partners-logo">
+            <img src="image/partner-logo (1).jpg" alt="partner-logo (1)">
+            <img src="image/partner-logo (2).jpg" alt="partner-logo (2)">
+            <img src="image/partner-logo (3).jpg" alt="partner-logo (3)">
+            <img src="image/partner-logo (4).jpg" alt="partner-logo (4)">
+            <img src="image/partner-logo (5).jpg" alt="partner-logo (5)">
+            <img src="image/partner-logo (6).jpg" alt="partner-logo (6)">
+            <img src="image/partner-logo (7).jpg" alt="partner-logo (7)">
+            <img src="image/partner-logo (8).jpg" alt="partner-logo (8)">
+            <img src="image/partner-logo (9).jpg" alt="partner-logo (9)">
+            <img src="image/partner-logo (10).jpg" alt="partner-logo (10)">
+            <img src="image/partner-logo (11).jpg" alt="partner-logo (11)">
+            <img src="image/partner-logo (12).jpg" alt="partner-logo (12)">
+        </div>
+      </section>
+
+
+
+
+
+
+    <!--=================================== Services Section =================================================--->
+
+      <section class="services">
+        <div class="service-content">
+            <h2>Simple and Secure wallet <span> Services</span></h2>
+            <p>Keep your wallet secure with simple & trusted tools. Manage it without any hassle.</p>
+        </div>
+        <div class="service-cards">
+            <div class="service-card-content">
+              <h3>Multi-coin wallet</h3>
+              <p>Store multiple assets simultaneously in one wallet.</p>
+              <img src="image/wallet_icon.png" alt="wallet_icon">
+            </div>
+            <div class="service-card-content">
+              <h3>Simple buy & sell options</h3>
+              <p>Buy & sell cryptocurrency quickly & easily.</p>
+              <img src="image/simple-option.png" alt="simple-option">
+            </div>
+            <div class="service-card-content">
+              <h3>Portfolio Tracking</h3>
+              <p> Track your total asset holdings, values & over time.</p>
+              <img src="image/tracking.png" alt="tracking">
+            </div>
+            <div class="service-card-content">
+              <h3>Mobile App</h3>
+              <p>All in one place.</p>
+              <img src="image/mobile-app.png" alt="mobile-app">
+            </div>
+            <div class="service-card-content">
+              <h3>Advanced Trading</h3>
+              <p>Use advanced orders: limit, market, stop...</p>
+              <img src="image/advanced-trading.png" alt="advanced-trading">
+            </div>
+        </div>
+      </section>
+
+
+
+
+
+    <!--=================================== Coins Section =================================================--->
+
+      <section class="coins">
+        <div class="coins-logo">
+            <img src="image/coins-logo (1).png" alt="">
+            <img src="image/coins-logo (2).png" alt="">
+            <img src="image/coins-logo (3).png" alt="">
+            <img src="image/coins-logo (4).png" alt="">
+            <img src="image/coins-logo (5).png" alt="">
+            <img src="image/coins-logo (6).png" alt="">
+            <img src="image/coins-logo (7).png" alt="">
+            <div class="shadow"></div>
+        </div>
+        <div class="coins-content">
+            <h2>More than 100 <span>Coins</span> available</h2>
+            <p>Explore a wide variety of coins. Pick the right one for you.</p>
+            <div class="coins-content-btn">
+                <button type="button">Get Started</button>
+                <button type="button">View Exchange</button>
+            </div>
+        </div>
+      </section>
+
+
+
+
+
+
+    <!--=================================== Why Section =================================================--->
+
+      <section class="why">
+        <div class="why-content">
+            <img src="image/why-img.png" alt="">
+            <div class="why-bg shadow"></div>
+            <h2><span>Why</span> Crypto Markets?</h2>
+            <p>Trade safely & easily with us. Enjoy fast & simple trading options.</p>
+        </div>
+        <div class="why-cards">
+           <div class="why-cards-content">
+                <img src="image/security.png" alt="">
+                <h3>Security</h3>
+                <p>Multiple layers of account security, <br> 2FA, address whitelisting, Biometrics.</p>
+           </div>
+           <div class="why-cards-content">
+                <img src="image/speed.png" alt="">
+                <h3>Speed</h3>
+                <p>Fast trades with 99.99% reliable <br> uptime.</p>
+           </div>
+           <div class="why-cards-content">
+                <img src="image/customer-service.png" alt="">
+                <h3>Support</h3>
+                <p>100% & 24/7 based customer <br> support.</p>
+           </div>
+        </div>
+      </section>
+
+
+
+
+    <!--=================================== Call To Action Section =============================================--->
+
+      <section class="call-to-action">
+          <h2>When you need more than just a <span>crypto exchange</span>  </h2>
+          <div class="call-to-action-cards">
+            <div class="call-to-action-cards-content">
+                <p>Crypto Market</p>
+                <h3>Get started with BTC Market in 5 minutes, for free</h3>
+            </div>
+            <div class="call-to-action-btn">
+              <img src="image/logo.png" alt="">
+                <button type="button">Get Started</button>
+                <button type="button">View Exchange</button>
+            </div>
+            </div>
+        </div>
+      </section>
+
+
+
+
+    <!--=================================== Footers Section =================================================--->
+
+      <footer>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <a href="">Products</a>  
+                <a href="">Features</a>
+                <a href="">Comparison</a>
+                <a href="">Resources</a>
+                <a href="">About</a>
+            </div>
+            <div class="footer-links">
+                <a href="">Privacy policy</a> 
+                <a href="">Terms of use</a>
+                <a href="">Cookies</a>
+                <a href="">Disclaimer</a>
+            </div>
+            <p>© All Rights Reserved 2025 Copyright</p>
+            <div class="footer-bg shadow"></div>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+    <!--=================================== Js Section =================================================--->
+
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
+
+
+
